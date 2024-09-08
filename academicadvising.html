@@ -1,43 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
+    <title>MSI Academic Advising</title>
 </head>
-<body>
-    <a href = "">Skip to Main Content</a>
-    <header>
+
+<body style="background-color:#00274c; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <div style="background-color:#ffffe4; width: 70%; margin: 0 auto; box-sizing: border-box; padding: 2%;">
+        
+        <header>
+            <a href = "#main">Skip to Main Content</a>
+            <img src="images/umsi.png" alt="UMSI Logo" width="100%">
+        </header>
+        <br>
         <nav>
-            <ul>
-                <li><a href = "index.html">Home</a></li>
-                <li><a href = "page_1.html">Page 1</a></li>
-                <li>Page 2</li>
-                <li>Page 3</li>
-            </ul>
+            <button onclick="document.location='index.html'">Home</button>
+            <button onclick="document.location='studentsupportservices.html'">Student Support Services</button>
+            <button onclick="document.location='academicadvising.html'">MSI Academic Advising</button>
+            <button onclick="document.location='resourcesite.html'">MSI Academic Advising Resource Site</button>
         </nav>
-        <h1>Academic Suport at UMSI</h1>
 
-    </header>
-    <main>
-        <div>
-            <p>At the University of Michigan School of Information (UMSI), we are committed to supporting our students' academic success by offering a wide array of resources and services. Our academic advising team provides personalized guidance to help you navigate your curriculum, select courses, and address any academic challenges or questions you may encounter during your studies. UMSI students also have access to the extensive collections and study spaces within the University Library system, offering both digital and physical resources essential for research and coursework. Additionally, our specialized tutoring services and the UMSI Writing Center are available to support you in mastering complex subjects and enhancing your written communication skills. By utilizing these academic resources, UMSI students can thrive in their studies and achieve their educational goals. </p>
+        <main id="main">
+            <h1 style="background-color:#FFCB05; color: #00274c;">MSI Academic Advising</h1>
+            <img src="images/academicadvising.jpg" alt="Academic" class="center" width="100%">
+            <section>
+                <h2 style="color: #00274c;">Academic Advising Overview:</h2>
+                <p>Academic Advising is a process where students envision, execute, and reflect on their academic plans with guidance from a qualified UMSI Academic Advisor. Students share their goals, challenges, and questions with their academic advisor, and their academic advisor contributes knowledge of university and program requirements, policies, and processes. Together, we develop an academic plan that aligns with the student's personal and professional goals. </p>
+                <p>For information about how to schedule an appointment with <a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/meet-your-advisors?authuser=0">your advisor,</a> visit the <a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/connecting-with-an-advisor?authuser=0">Connecting with an Advisor page.</a> It may be helpful to review the <a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/how-to-get-the-most-out-of-advising?authuser=0">How to Get the Most Out of Academic Advising page before</a> your appointment.</p>
 
-        </div>
+                
+                <h2 style="background-color:#FFCB05; color: #00274c; text-align: center;">How can your Academic Advisor help you?</h2>
+                <ul style="padding: 0; width: fit-content; margin: 0 auto; text-align: left;">
+                    <li>Creating an individualized academic plan</li>
+                    <li>Interpreting an academic policy or procedure</li>
+                    <li>Discussing concerns about a particular course</li>
+                    <li>Connecting with student support resources and services</li>
+                    <li>Navigating a disruption to your MSI experience</li>
+                </ul>
+                <p style="text-align: center;">
+                    <button 
+                        onclick="window.location.href = 'https://www.google.com/url?q=https%3A%2F%2Fsi-umich.navigate.eab.com&sa=D&sntz=1&usg=AOvVaw2hrgCEntX9a472rfp4p9kR';">
+                        Schedule 1:1 Appointment
+                    </button>
+                    <button
+                        onclick="window.location.href = 'https://calendar.google.com/calendar/u/0/embed?src=umsi.advising.msi@umich.edu&ctz=America/New_York';">
+                        Drop In 1:1 Appointment
+                    </button>
+                    <button
+                        onclick="window.location.href = 'mailto:umsi.advising.msi@umich.edu';">
+                        Email Us
+                    </button>
+                </p>
 
-<div>[Enter more of your own content here - that includes changing the  content of this page from Academic support to something else!]</div>
-            
-            <!-- Jackie Wolf -->
-    
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </main>
-    <footer>
-        <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
+                
+                <h2 style="background-color:#FFCB05; color: #00274c; text-align: center;">More Information on Advising</h2>
+                <ul style="padding: 0; width: fit-content; margin: 0 auto; text-align: left;">
+                    <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/connecting-with-an-advisor?authuser=0">What Type of Appointment Should I Book?</a></li>
+                    <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/how-to-get-the-most-out-of-advising?authuser=0">Getting The Most Out of your Advising Appointment</a></li>
+                    <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/meet-your-advisors?authuser=0">Meet Your Advisors</a></li>
+                    <li><a href="https://sites.google.com/umich.edu/msiacademicadvising/academic-advising/mission-values-and-vision?authuser=0">Residential Advising Mission, Vision and Values</a></li>
+                </ul>
+        
+            </section>
+        
+            <br><hr>
+
+        </main>
+        <footer id ="contact">
+        <div style="display: flex; justify-content: space-between;">
+            <div style="width: 48%;">
+                <img src="gifs/m.gif" alt="Go Blue" style="width:20%;height:auto;">
+            </div>
+            <div>
+                <p style="text-align: right;">MSI Academic Advising | <a href="mailto: umsi.advising.msi@umich.edu">umsi.advising.msi@umich.edu</a></p>
+                <p style="text-align: right;">&copy; Copyright 2024<br>
+                Anoushka Ghosh</p>
+            </div>
     </footer>
-    
+    </div>
+
 </body>
 
 </html>
