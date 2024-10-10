@@ -4,17 +4,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Success Portal</title>
+    <title>Student Resource Portal</title>
+    <link rel="stylesheet" href="html5reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color:#00274c; font-family: Verdana, Geneva, Tahoma, sans-serif;">
-    <div style="background-color:#ffffe4; width: 70%; margin: 0 auto; box-sizing: border-box; padding: 2%;">
-
+<body>
     <header>
-        <a href = "#main">Skip to Main Content</a>
-        <img src="images/umsi.png" alt="UMSI Logo" style="width: 100%; height: auto; max-width: 70vw">
+        <a href="#main" class="skip-link">Skip to Main Content</a>
+        <img src="images/umsi.png" alt="UMSI Logo" class="responsive-img">
     </header>
-    <br>
+
     <nav>
         <button onclick="document.location='index.html'">Home</button>
         <button onclick="document.location='studentsupportservices.html'">Student Support Services</button>
@@ -23,11 +23,10 @@
     </nav>
 
     <main id="main">
-        <h1 style="background-color:#FFCB05; color: #00274c;">Student Success Portal</h1>
+        <h1 class="main-title">Student Success Portal</h1>
         <img src="images/m.jpg" alt="Student Success" class="center" style="width: 100%; height: auto; max-width: 70vw">
-        <section>
-            <h2 style="color: #00274c;">Welcome to the UM Grad Success Navigator!</h2>
-            <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
+        <h2> Welcome to the UM Grad Success Navigator!</h2>
+        <p> Your Comprehensive Guide to Resources for Graduate School Success</p>
             <p>This guide is set up to help you be successul inside and outside of the classroom and we have included the following resources throughout our site:</p>
             <ul>
                 <li><a class="link" href="resourcesite.html"> Academic Resources </a></li>
@@ -36,109 +35,16 @@
                 <li><a class="link" href="#life_outside_classroom"> Life Outside Classroom </a></li>
                 <li><a class="link" href="#contact"> Contact </a></li>
             </ul>
-        </section>
-
-        <section id="physical_health">
-            <h2 style="background-color:#FFCB05; color: #00274c; text-align: center;">Physical Health</h2>
-            <p>Keeping your body healthy is essential for success. The University of Michigan offers numerous resources to help you stay in top physical condition:</p>
-            <div style="display: flex; justify-content: space-between;">
-                <div style="width: 48%; text-align: center;">
-                    <h3>University Health Services (UHS):</h3>
-                    <p>Access comprehensive medical care, including routine check-ups, vaccinations, and specialist referrals.</p>
-                    <img src="images/UHS.jpg" alt="UHS" style="width: 100%; height: auto; max-width: 48vw">
-                    <p style="font-size: small;">University Health Services Building</p><br>
-                    <button onclick="window.location.href = 'https://uhs.umich.edu/';">
-                        University Health Services
-                    </button>
-                </div>
-                <div style="width: 48%; text-align: center;">
-                    <h3>Recreational Sports:</h3>
-                    <p>Participate in various fitness programs, sports clubs, and use of gym facilities to stay active and healthy.</p>
-                    <img src="images/recsports.jpg" alt="Recreational Sports" style="width: 100%; height: auto; max-width: 48vw">
-                    <p style="font-size: small;">UMSI out in the fall!</p><br>
-                    <button onclick="window.location.href = 'https://recsports.umich.edu/';">
-                        Recreational Sports
-                    </button>
-                </div>
-            </div>
-        </section>
-  
-        <section id = "mental_health">
-            <h2 style="background-color:#FFCB05; color: #00274c; text-align: center;">Mental Health</h2>
-            <p>Maintaining your mental well-being is crucial for thriving in graduate school. Here are resources to support your mental health:</p>
-            <div style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-                <div style="width: 48%; text-align: center; margin-bottom: 20px;">
-                    <h3>Counseling and Psychological Services:</h3>
-                    <p>Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
-                    <img src="images/caps.png" alt="CAPS" style="width: 100%; height: auto; max-width: 48vw">
-                    <p style="font-size: small;">CAPS at UofM</p><br>
-                    <button onclick="window.location.href = 'https://caps.umich.edu/';">
-                        Counseling and Psychological Services
-                    </button>
-                </div>
-                <div style="width: 48%; text-align: center; margin-bottom: 20px;">
-                    <h3>Wellness Coaching:</h3>
-                    <p>Work with a wellness coach to develop strategies for managing stress, time, and overall well-being.</p>
-                    <img src="images/wellness.jpg" alt="Wellness Coaching" style="width: 100%; height: auto; max-width: 48vw">
-                    <p style="font-size: small;">With a Wellness Coach!</p><br>
-                    <button onclick="window.location.href = 'https://uhs.umich.edu/wellness-coaching';">
-                        Wellness Coaching
-                    </button>
-                </div>
-                <div style="width: 48%; text-align: center; margin-bottom: 20px;">
-                    <h3>Mindfulness Resources:</h3>
-                    <p>Access individual counseling, group therapy, workshops, and crisis intervention services.</p>
-                    <img src="images/mindfulness.jpeg" alt="Mindfullness" style="width: 100%; height: auto; max-width: 48vw">
-                    <p style="font-size: small;">Mindfulness at UofM</p><br>
-                    <button onclick="window.location.href = 'https://michigan-mindfulness.medicine.umich.edu/';">
-                        Michigan Mindfulness
-                    </button>
-                </div>
-                <div style="width: 48%; text-align: center; margin-bottom: 20px;">
-                    <h3>Support Groups:</h3>
-                    <p>Join peer support groups for shared experiences and collective coping strategies.</p>
-                    <img src="images/supportgroups.jpg" alt="Support Groups" style="width: 100%; height: auto; max-width: 48vw">
-                    <p style="font-size: small;">Wolverine Support Network</p><br>
-                    <button onclick="window.location.href = 'https://caps.umich.edu/article/wolverine-support-network';">
-                        Support Groups
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <section id="life_outside_classroom">
-            <h2 style="background-color:#FFCB05; color: #00274c; text-align: center;">Life Outside the Classroom</h2>
-            <video style="width: 100%; height: auto; max-width: 70vw"  autoplay muted>
-                <source src="videos/video.mp4" type="video/mp4">
-            </video>
-            <p>Graduate school is more than just academics. It's important to cultivate a balanced life. Here are some resources to help you enjoy life outside the classroom:</p>
-
-            <ul>
-                <li><a href="https://campusinvolvement.umich.edu/managing-your-student-organization"><strong>Student Organizations:</strong></a> Join one of the many student organizations to connect with peers who share your interests and passions.</li>
-                <li><a href="https://arts.umich.edu/"><strong>Arts and Culture:</strong></a> Explore UM's vibrant arts scene with events, exhibitions, and performances happening year-round.</li>
-                <li><a href="https://careercenter.umich.edu/"><strong>Career Services:</strong></a> Utilize career counseling, job search resources, and networking opportunities to prepare for your professional future.</li>
-                <li><a href="https://ocs.umich.edu/goals-priorities/2025-goals/community-engagement/"><strong>Community Engagement:</strong></a> Get involved with local volunteering opportunities and community service projects to make a positive impact.</li>
-                <li><a href="https://studentlife.umich.edu/housing-food"><strong>Housing and Dining:</strong></a> Find information on on-campus housing options and dining services to ensure a comfortable living experience.</li>
-            </ul>
-        </section>
-
-        <br><hr>
-
+        <img src="images/main.jpg" alt="Campus View" class="responsive-img">
     </main>
-    <footer id ="contact">
-        <div style="display: flex; justify-content: space-between;">
-            <div style="width: 48%;">
-                <img src="gifs/m.gif" alt="Go Blue" style="width: 20%; height: auto; max-width: 48vw">
-            </div>
-            <div>
-                <p style="text-align: right;">MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising </a></p>
-                <p style="text-align: right;">&copy; Copyright 2024<br>
-                Anoushka Ghosh</p>
-            </div>
+
+    <footer>
+        <div class="footer-content">
+            <img src="gifs/m.gif" alt="Go Blue" class="footer-img">
+            <p>MSI Academic Advising | <a href="https://sites.google.com/umich.edu/msiacademicadvising/student-support-resources">UMSI Academic Advising</a></p>
+            <p>&copy; Copyright 2024<br>Anoushka Ghosh</p>
         </div>
     </footer>
-    </div>
-
 </body>
 
 </html>
